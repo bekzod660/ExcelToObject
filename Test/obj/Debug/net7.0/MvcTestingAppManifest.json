@@ -1,0 +1,6 @@
+{
+  "Task.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Desktop\\Pdp\\Task.UI\\Task.Application",
+  "Task.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Desktop\\Pdp\\Task.UI\\Task.Domain",
+  "Task.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Desktop\\Pdp\\Task.UI\\Task.Infrastructure",
+  "Task.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Desktop\\Pdp\\Task.UI\\Task.UI"
+}
