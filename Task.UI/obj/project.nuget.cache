@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rXeA0Pz0//rUy6cs2J6rWFXkzs/Xic3OlY2bge9ywh1lC1cXQXLPL3sSoWYGzZy5Qz1VShmRExdRGZOMohKrZg==",
+  "dgSpecHash": "uBM5pFpCeM7WbiZhZUQZv/YTHrxJVNEd21jmWVgbEQBrNI6MXYSMBUQt/3ZBAfJKLrceTr6i92O2yoWEfIYNQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\SynelTask\\Task\\Task.UI\\Task.UI\\Task.UI.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

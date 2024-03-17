@@ -41,6 +41,7 @@ namespace Task.Application.UseCases.Employees.Commands
             if (employee == null) return false;
 
             employee.Id = request.Id;
+            employee.Payroll = request.Payroll;
             employee.Forename = request.Forename;
             employee.Surname = request.Surname;
             employee.DateOfBirth = request.DateOfBirth;

@@ -2,7 +2,6 @@
 using System.Text.Json;
 using Task.Application.Common;
 using Task.Application.Common.Abstraction;
-using Task.Application.Common.Extensions;
 using Task.Application.Common.Models;
 using Task.Domain.Entity;
 
@@ -10,8 +9,7 @@ namespace Task.Application.UseCases.Employees.Queries
 {
     public class GetEmployeesQuery : IRequest<ResponseViewModel>
     {
-        public string? Sorting { get; set; } = null;
-        public string SearchingText { get; set; } = null;
+        public string? SearchingText { get; set; } = null;
         public string? Pagination { get; set; } = null;
         public int PageSize { get; set; } = 10;
         public Employee? Employee { get; set; } = null;
@@ -32,16 +30,18 @@ namespace Task.Application.UseCases.Employees.Queries
 
         public async Task<ResponseViewModel> Handle(GetEmployeesQuery request, CancellationToken cancellationToken)
         {
-            Sorting<Employee> _sorting = default;
-            if (request.Sorting != null)
-                _sorting = QueryDeserialize<Sorting<Employee>>(request.Sorting);
-            else
+            IQueryable<Employee> employeesQuery = _context.Employees;
+
+            if (!string.IsNullOrWhiteSpace(request.SearchingText))
             {
-                _sorting = new Sorting<Employee>();
-                _sorting.Toggle(employee => employee.Forename);
+                employeesQuery = employeesQuery.Where(
+                    x => x.Surname.Contains(request.SearchingText) ||
+                    x.Forename.Contains(request.SearchingText) ||
+                    x.Email.Contains(request.SearchingText) ||
+                    x.Address.Contains(request.SearchingText) ||
+                    x.Address2.Contains(request.SearchingText)
+                    );
             }
-
-
             List<Employee> Employees = _context.Employees.ToList();
             if (request.SearchingText != null)
             {
@@ -53,11 +53,6 @@ namespace Task.Application.UseCases.Employees.Queries
                     x.Address.Contains(search) ||
                     x.Address2.Contains(search)
                     ).ToList();
-            }
-
-            if (request.Sorting != null)
-            {
-                Employees = Employees.ApplySorting(_sorting);
             }
             Pagination<Employee> _pagination = null;
 
@@ -73,11 +68,10 @@ namespace Task.Application.UseCases.Employees.Queries
                 PaginatedList = await Pagination<Employee>.CreateAsync(Employees, 1, request.PageSize);
             }
 
-            var responseViewModel = new ResponseViewModel(typeof(Employee))
+            var responseViewModel = new ResponseViewModel()
             {
                 Pagination = PaginatedList,
-                Sorting = _sorting,
-                Employee = request.Employee,
+                EditEmployee = request.Employee,
                 nextUrl = request.NextUrl
             };
             return responseViewModel;

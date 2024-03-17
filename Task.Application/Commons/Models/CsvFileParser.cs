@@ -17,13 +17,6 @@ public class CsvFileParser : ICsvFileParser
         {
             csv.Context.RegisterClassMap<EmployeeMap>();
             var records = csv.GetRecords<Employee>().ToList();
-
-            // Generate unique IDs for each record
-            foreach (var record in records)
-            {
-                record.Id = Guid.NewGuid();
-            }
-
             return records;
         }
     }

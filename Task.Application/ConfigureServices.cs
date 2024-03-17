@@ -6,7 +6,7 @@ namespace Task.Application
 {
     public static class ConfigureServices
     {
-        public static IServiceCollection Addapplication(this IServiceCollection services)
+        public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddScoped<ICsvFileParser, CsvFileParser>();
             services.AddMediatR(option =>

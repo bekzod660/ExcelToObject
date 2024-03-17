@@ -30,23 +30,5 @@ namespace Employees.Tests.Tests.Commands
             //Assert
             Assert.True(employee);
         }
-
-        //[Fact]
-        //public async Task EmployeeUpdateCommandHandler_FailOnWrongPayyroll()
-        //{
-        //    //Arrange
-        //    var handler = new EmployeeUpdateCommandHandler(context);
-
-        //    //Act
-        //    bool result=await handler.Handle(new EmployeeUpdateCommand
-        //    {
-        //        PayyrollNumber = Guid.NewGuid().ToString()
-        //    }, CancellationToken.None);
-
-
-        //    //Assert
-        //    Assert.False(result);
-
-        //}
     }
 }

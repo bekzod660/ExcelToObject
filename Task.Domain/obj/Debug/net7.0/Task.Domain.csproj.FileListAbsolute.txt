@@ -20,3 +20,15 @@ C:\Users\user\Desktop\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.D
 C:\Users\user\Desktop\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\refint\Task.Domain.dll
 C:\Users\user\Desktop\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.pdb
 C:\Users\user\Desktop\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\ref\Task.Domain.dll
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\bin\Debug\net7.0\Task.Domain.deps.json
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\bin\Debug\net7.0\Task.Domain.dll
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\bin\Debug\net7.0\Task.Domain.pdb
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.AssemblyInfo.cs
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.sourcelink.json
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.dll
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\refint\Task.Domain.dll
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\Task.Domain.pdb
+C:\Users\user\Desktop\Pdp\SynelTask\Task\Task.UI\Task.Domain\obj\Debug\net7.0\ref\Task.Domain.dll

@@ -20,19 +20,15 @@ namespace Task.UI.Controllers
         }
         [HttpGet]
         public async ValueTask<ViewResult> Index(
-            string? sorting,
             string? pagination,
             string? searching)
         {
             GetEmployeesQuery query = new GetEmployeesQuery
             {
-                Sorting = sorting,
                 SearchingText = searching,
                 Pagination = pagination
             };
             var employees = await _mediator.Send(query);
-            ViewData["Error"] = TempData["Error"] ?? null;
-            ViewData["Message"] = TempData["Message"] ?? null;
             return View(employees);
         }
 
@@ -44,8 +40,8 @@ namespace Task.UI.Controllers
                 TempData["Error"] = "invalid file mimetype";
                 return RedirectToAction("Index");
             }
-            int adddedEmplloyees = await _mediator.Send(CvsFile);
-            TempData["Message"] = $"Successfully imported data count: {adddedEmplloyees}";
+            int addedEmployees = await _mediator.Send(CvsFile);
+            TempData["Success"] = $"Successfully imported data count: {addedEmployees}";
             return RedirectToAction("Index");
         }
 

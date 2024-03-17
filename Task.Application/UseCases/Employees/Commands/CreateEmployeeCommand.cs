@@ -10,7 +10,6 @@ namespace Task.Application.UseCases.Employees.Commands
     {
         public IFormFile file { get; set; }
     }
-
     public class CreateEmployeeCommandHandler : IRequestHandler<CreateEmployeeCommand, int>
     {
         private readonly IApplicationDbContext _context;
@@ -45,14 +44,12 @@ namespace Task.Application.UseCases.Employees.Commands
             {
                 employee.Id = Guid.NewGuid();
             }
-            int addedEmployeeCount = 0;
-            foreach (var item in Employees)
+            _context.Employees.AddRange(Employees);
+            if (await _context.SaveChangesAsync() > 0)
             {
-                _context.Employees.Add(item);
-                addedEmployeeCount++;
+                return Employees.Count;
             }
-            await _context.SaveChangesAsync();
-            return addedEmployeeCount;
+            return 0;
         }
     }
 

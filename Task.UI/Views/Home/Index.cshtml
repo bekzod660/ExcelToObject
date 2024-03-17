@@ -5,47 +5,24 @@
 
 @{
     Layout = "_Layout";
-    ViewData["title"] = "Task | Employees";
 }
-<style>
-    .material-symbols-outlined {
-        vertical-align: bottom;
-        /*font-size: 18px !important;*/
-    }
+        <div class="row mt-3 second-column">
+            <div class="search">
+                <div class="input-group">
+                    <input id="searchInput" asp-action="Index" class="form-control" type="text" name="searching" />
+                    <button class="btn btn-primary" onclick="Search()">Search</button>
+                </div>
+            </div>
 
-    .tableRow {
-        cursor: pointer;
-    }
-
-        .tableRow:active {
-            box-shadow: 0 0 5px #0d6efd;
-        }
-
-    .table {
-        display: block !important;
-        overflow-x: auto !important;
-        width: 100% !important;
-    }
-</style>
-<div class="container-lg mt-1">
-
-    @* <form action="Index" method="post" enctype="multipart/form-data" class="mb-3"> *@
-        <!-- Search Input -->
-    <div class="input-group mb-3">
-        <input id="searchInput" asp-action="Index" class="form-control" type="text" name="searching" placeholder="Search..." />
-        <button class="btn btn-primary" onclick="Search()"><i class="bi bi-search"></i></button>
-    </div>
-
-  
-    <form action="/addEmployee" method="post" enctype="multipart/form-data" class="mb-3">
-        <!-- Upload Input -->
-        <div class="input-group mb-3">
-            <input class="form-control" type="file" name="file" accept="text/csv" required />
-            <button class="btn btn-primary">
-                <span class="material-symbols-outlined">file_upload</span> Upload
-            </button>
+            <div class="input">
+                <form action="/addEmployee" method="post" enctype="multipart/form-data" class="input-group">
+                    <input class="form-control border rounded" type="file" name="file" accept="text/csv" required />
+                    <button class="btn btn-primary">
+                        <span class="material-symbols-outlined">file_upload</span> Upload
+                    </button>
+                </form>
+            </div>
         </div>
-    </form>
 
     @if (ViewData["Error"] is not null)
     {
@@ -54,65 +31,93 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     }
+    @if (TempData["Success"] != null)
+        {
+            <div id="successAlert" class="alert alert-success alert-dismissible fade show custom-alert" role="alert">
+                @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
 
-    @if (ViewData["Message"] is not null)
-    {
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            @ViewData["Message"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    }
-
-    <div class="table-responsive">
-        <table class="table table-striped table-hover" style="width: 150% !important;">
-            <thead id="tableHead" class="table-light border-2 border-primary ">
+            <script>
+                // Automatically hide the success alert after 1 second
+                setTimeout(function () {
+                    var successAlert = document.getElementById('successAlert');
+                    if (successAlert) {
+                        successAlert.classList.add('d-none'); // Add a class to hide the alert
+                    }
+                }, 3000);
+            </script>
+        }
+        <table id="myTable" class="table table-sm table-bordered mytable">
                 <tr>
-                    <th class="position-sticky fixed-top" scope="col"> # </th>
-                    @for (int i = 1; i < Model.Columns.Count; i++)
-                    {
-                        <th scope="col" style="min-width: 150px; width: min-content">
-                            <div class="input-group input-group-sm">                              
-                                    <span class="input-group-text">@Model.Columns[i]</span>                                    
-                                
-                                @if (Model.Sorting.Asc == Model.Columns[i])
-                                {
-                                    <button class="btn btn-primary" type="button" onclick="Sort('@Model.Columns[i]')" data-bs-toggle="sort">
-                                        <i class="bi bi-sort-up"></i>
-                                    </button>
-                                }
-                                else if (Model.Sorting?.Desc == Model.Columns[i])
-                                {
-                                    <button type="button" class="btn btn-primary" onclick="Sort('@Model.Columns[i]')" data-bs-toggle="sort">
-                                        <i class="bi bi-sort-down"></i>
-                                    </button>
-                                }
-                                else
-                                {
-                                    <button type="button" class="btn btn-primary" onclick="Sort('@Model.Columns[i]')" data-bs-toggle="sort">
-                                    </button>
-                                } 
+                        <th>
+                            <div class="input-group input-group-sm">
+                           </div>
+                        </th>
+                        <th  onclick="sortTable(0)">
+                            <div class="input-group input-group-sm">
+                            <span class="input-group-text" style="cursor:pointer">Payroll Number</span>
+                           </div>
+                        </th>
+                        
+                        <th onclick="sortTable(1)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Forename</span>
                             </div>
                         </th>
-                    }
-                    <th scope="col" class="position-sticky fixed-top">
-                        <div class="input-group input-group-sm">
-                            <span class="input-group-text">
-                                Actions
-                            </span>
-                            <button type="button" class="btn btn-primary disabled">
-                            </button>
-                        </div>
-                    </th>
+                        <th onclick="sortTable(2)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Surname</span>
+                            </div>
+                        </th>
+                        <th onclick="sortTable(3)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Date of Birth</span>
+                            </div>
+                        </th>
+                        <th onclick="sortTable(4)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Telephone</span>
+                            </div>
+                        </th>
+                        <th onclick="sortTable(5)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Mobile</span>
+                                </div>
+                         </th>
+                         <th onclick="sortTable(6)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Address</span>
+                                </div>
+                         </th>
+                        <th onclick="sortTable(7)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Address 2</span>
+                            </div>
+                        </th>
+                        <th onclick="sortTable(8)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Postcode</span>
+                            </div>
+                        </th>
+        <th onclick="sortTable(9)">
+            <div class="input-group input-group-sm" style="display: flex; align-items: center; justify-content: center;">
+                              <span class="input-group-text" style="cursor:pointer">Email</span>
+                            </div>
+                        </th>
+                        <th onclick="sortTable(10)">
+                            <div class="input-group input-group-sm">
+                <span class="input-group-text" style="cursor:pointer">Start Date</span>
+                            </div>
+                        </th>
                 </tr>
-            </thead>
 
             @if (Model.Pagination.Items is not null && Model.Pagination.Items.Count != 0)
             {
-                <tbody>
                     @foreach ((Employee employee, int index) in Model.Pagination.Items.Select((employee, i) => new ValueTuple<Employee, int>(employee, i)))
                     {
                         <tr class="tableRow">
-                            <td class="position-sticky fixed-top shadow-none" style="background-color: #f1f1f1">@(index + 1)</td>
+                            <td>@(index+1)</td>
                             <td>@employee.Payroll</td>
                             <td>@employee.Forename</td>
                             <td>@employee.Surname</td>
@@ -136,7 +141,6 @@
                             </td>
                         </tr>
                     }
-                </tbody>
             }
             else if (Model.Pagination.Items is null)
             {
@@ -146,28 +150,39 @@
                 </div>
             }
         </table>
-    </div>
-    <caption class="align-content-end">All retrieved data count @(Model.Pagination.TotalCount)</caption>
-    <div class="float-end">
-        <ul class="pagination">          
+        <div class="dataCount"><b>All retrieved data count: @(Model.Pagination.TotalCount)</b></div>    
+         <div class="float-end">
+        <ul class="pagination">
+            @if (Model.Pagination.PageNumber > 1)
+            {
+                <li class="page-item">
+                    <button type="button" onclick="Paging(@Model.Pagination.PageNumber - 1)" class="page-link">Previous</button>
+                </li>
+            }
+
             @for (int i = 1; i <= Model.Pagination.TotalPages; i++)
             {
                 <li class="page-item">
                     <button type="button" onclick="Paging(@i)" class="page-link @(i == Model.Pagination.PageNumber ? "active" : "")">@i</button>
                 </li>
-            }            
+            }
+
+            @if (Model.Pagination.PageNumber < Model.Pagination.TotalPages)
+            {
+                <li class="page-item">
+                    <button type="button" onclick="Paging(@Model.Pagination.PageNumber + 1)" class="page-link">Next</button>
+                </li>
+            }
         </ul>
     </div>
-</div>
 
 
-@if (Model.Employee is not null)
+@if (Model.EditEmployee is not null)
 {
-
     <!-- Modal -->
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="modal" aria-hidden="false">
         @{
-            Employee employee = Model.Employee;
+            Employee employee = Model.EditEmployee;
         }
         <div class="modal-dialog">
             <div class="modal-content">
@@ -247,9 +262,10 @@
 }
 
 <script>
-    let sortingMetadata = @(Json.Serialize(Model.Sorting != null ? Model.Sorting : new Sorting<Employee>()));
-    let searchingMetadata = @(Json.Serialize(Model.Sorting));
+    let searchingMetadata = @(Json.Serialize(Model.Searching));
     let paginationMetaData = @Json.Serialize(Model.Pagination.PageNumber);
 </script>
-<script src="~/js/main.js">
-</script>
+<script src="~/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="~/css/site.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>

@@ -26,6 +26,7 @@ namespace Employees.Tests.Tests.Commands
             List<Employee> employees = _parser.Parse<Employee>(_file);
 
             // Assert
+            Assert.IsType<List<Employee>>(employees);
             Assert.NotNull(employees);
             Assert.NotEmpty(employees);
         }

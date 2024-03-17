@@ -37,9 +37,6 @@ namespace Employees.Tests.Tests.Commands
                     file = _file
                 }, CancellationToken.None);
             }
-
-            // Act
-
             Assert.Equal(employees.Count, addedEmployees);
         }
     }

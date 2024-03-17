@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xBcY2UsliPzWuWnwp157LnX7eh/hT2HR0suMNahDA2VWWS7ibE+WNXWUKead2np/MmfgjdpRURhcbZKRc4Bt/w==",
+  "dgSpecHash": "JnQEcQY0LZQgw3/m+6CkPwDUTFQt802lAXTxI7n+vhvzs9Hf72aqehky4rMO/v7sIUVPTwHirYKS2tLRDQbU6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\SynelTask\\Task\\Task.UI\\Task.Domain\\Task.Domain.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
