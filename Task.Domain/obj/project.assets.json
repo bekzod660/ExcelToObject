@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
+      "projectUniqueName": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
       "projectName": "Task.Domain",
-      "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
+      "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\obj\\",
+      "outputPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,6 +46,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -67,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

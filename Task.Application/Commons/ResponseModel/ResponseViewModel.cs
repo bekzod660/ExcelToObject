@@ -12,3 +12,4 @@ namespace Task.Application.Common
         public string? nextUrl { get; set; }
     }
 }
+    

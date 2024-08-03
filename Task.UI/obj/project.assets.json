@@ -8141,11 +8141,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj",
+      "projectUniqueName": "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\Task.UI.csproj",
       "projectName": "Task.UI",
-      "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj",
+      "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\Task.UI.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\obj\\",
+      "outputPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8167,11 +8167,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj"
+            "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
+              "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj"
             },
-            "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj"
+            "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
+              "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj"
             }
           }
         }
@@ -8180,6 +8180,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8212,7 +8217,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\ExcelToObject\\Test\\Test.csproj": {}
+    "D:\\Angular\\Pdp\\ExcelToObject\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
+    "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj",
+        "projectUniqueName": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj",
         "projectName": "Task.Application",
-        "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj",
+        "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\obj\\",
+        "outputPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj"
+              "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj": {
+                "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj"
               }
             }
           }
@@ -43,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -98,18 +103,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj": {
+    "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
+        "projectUniqueName": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
         "projectName": "Task.Domain",
-        "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
+        "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\obj\\",
+        "outputPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -137,6 +142,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -158,18 +168,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
+    "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj",
         "projectName": "Task.Infrastructure",
-        "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj",
+        "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\obj\\",
+        "outputPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -191,8 +201,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj"
+              "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
+                "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj"
               }
             }
           }
@@ -201,6 +211,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -230,18 +245,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj": {
+    "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\Task.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj",
+        "projectUniqueName": "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\Task.UI.csproj",
         "projectName": "Task.UI",
-        "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj",
+        "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\Task.UI.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\obj\\",
+        "outputPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -263,11 +278,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj"
+              "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
+                "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj"
               },
-              "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj"
+              "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
+                "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj"
               }
             }
           }
@@ -276,6 +291,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -308,18 +328,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\ExcelToObject\\Test\\Test.csproj": {
+    "D:\\Angular\\Pdp\\ExcelToObject\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\ExcelToObject\\Test\\Test.csproj",
+        "projectUniqueName": "D:\\Angular\\Pdp\\ExcelToObject\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Test\\Test.csproj",
+        "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Test\\obj\\",
+        "outputPath": "D:\\Angular\\Pdp\\ExcelToObject\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -341,14 +361,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Application\\Task.Application.csproj"
+              "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj": {
+                "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Application\\Task.Application.csproj"
               },
-              "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj"
+              "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj": {
+                "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj"
               },
-              "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.UI\\Task.UI.csproj"
+              "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\Task.UI.csproj": {
+                "projectPath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.UI\\Task.UI.csproj"
               }
             }
           }
@@ -357,6 +377,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -416,7 +441,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Domain", "Task.Domain\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Infrastructure", "Task.Infrastructure\Task.Infrastructure.csproj", "{C872B94A-4710-4212-8764-5958F4E9AADA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{1C1C7034-E61C-475E-975F-4668E5DE22A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{1C1C7034-E61C-475E-975F-4668E5DE22A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{FB188B55-82E3-45E0-A492-3B9615965C74}"
+	ProjectSection(SolutionItems) = preProject
+		E:\dataset.csv = E:\dataset.csv
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +56,7 @@ Global
 		{82A76F17-FF45-4A10-B422-9C5AD470E354} = {B0563661-D573-43B5-ADB7-9872C0630B5F}
 		{C872B94A-4710-4212-8764-5958F4E9AADA} = {B0563661-D573-43B5-ADB7-9872C0630B5F}
 		{1C1C7034-E61C-475E-975F-4668E5DE22A6} = {B0563661-D573-43B5-ADB7-9872C0630B5F}
+		{FB188B55-82E3-45E0-A492-3B9615965C74} = {B0563661-D573-43B5-ADB7-9872C0630B5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBEC7792-CC6A-4642-B254-B973F12F1663}

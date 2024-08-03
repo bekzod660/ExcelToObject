@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B/772cEUV8HYAhY8YewAZzkdfgmQWrL1Dj8hGyh8VeWQb9RFg/9uMo13fv4mfNQfoKn3ee+Sk10kesHlCDwKzA==",
+  "dgSpecHash": "zHqsJuwq1xPvkOxDW9BYZIvQB5/wZOPvuh5j6hqgfVtriLm4+5AUX09cKRQQmp5zRrRtOOmpggl+wccCN4pMfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj",
+  "projectFilePath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Infrastructure\\Task.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

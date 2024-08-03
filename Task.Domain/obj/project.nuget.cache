@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JnQEcQY0LZQgw3/m+6CkPwDUTFQt802lAXTxI7n+vhvzs9Hf72aqehky4rMO/v7sIUVPTwHirYKS2tLRDQbU6Q==",
+  "dgSpecHash": "GmVZmpFPQHp2YSy0Pj4vwFNMlguM92lX5urA0H57ZigYNV1x3zPTKmW86dLHvhIz96oCOFB0vz2+Ikq24T/rWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
+  "projectFilePath": "D:\\Angular\\Pdp\\ExcelToObject\\Task.Domain\\Task.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
